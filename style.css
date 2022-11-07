@@ -1,2 +1,158 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* ===========General Styles ===========*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 15px;
+}
+
+/* =========== Typography ==============*/
+
+.heading {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.paragraph {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    line-height: 1.7em;
+}
+
+.white {
+    color: var(--clr-white);
+}
+
+.gray {
+    color: var(--clr-gray);
+}
+
+.paragraph-orange{
+    color: var(--clr-orange);
+}
+
+.paragraph-cyan{
+    color: var(--clr-cyan);
+}
+
+.paragraph-dark-cyan{
+    color: var(--clr-dark-cyan);
+}
+
+/* =========== Colors ==================*/
+
+:root {
+    --clr-orange: hsl(31, 77%, 52%);
+    --clr-cyan: hsl(184, 100%, 22%);
+    --clr-dark-cyan: hsl(179, 100%, 13%);
+    --clr-white: hsla(0, 0%, 100%, 0.75);    /* paragraphs */
+    --clr-gray: hsl(0, 0%, 95%);    /* bgrounds, headings and button */
+}
+
+
+/* =========== Layout ==============*/
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* =========== Components Styles ==============*/
+
+.orange {
+    background-color: var(--clr-orange);
+}
+
+.cyan {
+    background-color: var(--clr-cyan);
+}
+
+.dark-cyan {
+    background-color: var(--clr-dark-cyan);
+}
+
+.container{
+    min-height: 475px;
+    max-width: 875px;
+}
+
+.card{
+    padding: 3.3em;
+}
+
+.card img{
+    width: 60px;
+}
+.card p{
+    height: 40%;
+}
+
+.learn-more{
+    text-decoration: none;
+    background-color: var(--clr-gray);
+    text-align: center;
+    padding: 0.9em 2.2em;
+    border-radius: 2em;
+ }
+
+.learn-more:hover {
+    border: 2px solid white;
+    background: none;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media screen and (max-width:750px) {
+    body{
+        height: auto;
+        position: relative;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 1em;
+    }
+    
+    .card{
+        padding: 2em;
+    }
+
+    .heading{
+        margin:0.5em 0;
+    }
+
+    .card p{
+        margin-bottom: 1em;
+    }
+}
