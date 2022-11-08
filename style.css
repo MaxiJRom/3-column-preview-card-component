@@ -9,6 +9,7 @@
     font-size: 15px;
 }
 
+
 /* =========== Typography ==============*/
 
 .heading {
@@ -44,6 +45,7 @@
 .paragraph-dark-cyan{
     color: var(--clr-dark-cyan);
 }
+
 
 /* =========== Colors ==================*/
 
